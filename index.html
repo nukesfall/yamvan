@@ -37,106 +37,9 @@
       text-align: center;
     }
 
-    .topline {
-      font-size: 12px;
-      letter-spacing: 0.24em;
-      font-weight: 900;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-    }
-
     .logo-lockup {
       margin: 0 auto 10px;
       width: min(100%, 620px);
-    }
-
-    .arc {
-      font-size: clamp(12px, 2vw, 18px);
-      letter-spacing: 0.22em;
-      font-weight: 900;
-      text-transform: uppercase;
-      margin-bottom: 12px;
-    }
-
-    .van {
-      width: 150px;
-      height: 86px;
-      margin: 0 auto 10px;
-      border: 6px solid var(--line);
-      border-radius: 46px 56px 24px 24px;
-      position: relative;
-      background: var(--black);
-    }
-
-    .van::before {
-      content: "";
-      position: absolute;
-      left: 25px;
-      top: 15px;
-      width: 46px;
-      height: 25px;
-      border: 5px solid var(--cream);
-      border-radius: 14px;
-    }
-
-    .van::after {
-      content: "";
-      position: absolute;
-      right: 20px;
-      top: 15px;
-      width: 34px;
-      height: 25px;
-      border: 5px solid var(--cream);
-      border-radius: 10px;
-    }
-
-    .wheel {
-      position: absolute;
-      bottom: -17px;
-      width: 30px;
-      height: 30px;
-      border: 6px solid var(--line);
-      background: var(--cream);
-      border-radius: 50%;
-    }
-
-    .wheel.left { left: 26px; }
-    .wheel.right { right: 26px; }
-
-    .star {
-      display: inline-block;
-      font-size: 24px;
-      transform: translateY(-14px);
-      margin-left: 4px;
-    }
-
-    h1 {
-      font-family: Georgia, 'Times New Roman', serif;
-      font-style: italic;
-      font-size: clamp(72px, 17vw, 152px);
-      line-height: 0.82;
-      letter-spacing: -0.075em;
-      font-weight: 900;
-    }
-
-    .mini {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 14px;
-      margin-top: 20px;
-      font-size: clamp(12px, 2.2vw, 18px);
-      letter-spacing: 0.22em;
-      font-weight: 900;
-      text-transform: uppercase;
-    }
-
-    .mini::before,
-    .mini::after {
-      content: "";
-      width: 34px;
-      height: 3px;
-      background: var(--black);
     }
 
     .phone {
@@ -212,9 +115,9 @@
 
     .cards {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 12px;
-      max-width: 820px;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      max-width: 600px;
       margin: 0 auto 34px;
     }
 
@@ -271,22 +174,13 @@
       .phone {
         width: 100%;
       }
-
-      .mini {
-        gap: 10px;
-      }
-
-      .mini::before,
-      .mini::after {
-        width: 22px;
-      }
     }
   </style>
 </head>
 <body>
   <main class="wrap">
-    <section class="logo-lockup" aria-label="Yamvan logo">
-      <img src="https://nukesfall.github.io/photodump/yamvan.png" alt="Yamvan logo" style="width:100%; max-width:520px; height:auto; margin: 0 auto 0px; display:block;" />
+    <section class="logo-lockup">
+      <img src="https://nukesfall.github.io/photodump/yamvan.png" style="width:100%; max-width:520px; margin:0 auto; display:block;" />
     </section>
 
     <a class="phone" href="tel:+19713128020">971-312-8020</a>
@@ -302,22 +196,16 @@
       <a class="btn secondary" href="tel:+19713128020">Call Now</a>
     </div>
 
-    <section class="cards" aria-label="Pricing and service details">
+    <section class="cards">
       <div class="card">
-        <h2>Base Rate</h2>
-        <div class="price">$75</div>
-        <p>Simple starting price for small local junk runs.</p>
-      </div>
-
-      <div class="card">
-        <h2>Mileage</h2>
-        <div class="price">$1 / mile</div>
-        <p>Added based on distance for pickup, hauling, and disposal.</p>
+        <h2>Pricing</h2>
+        <div class="price">$75–$150</div>
+        <p>Most small runs fall in this range depending on size and distance.</p>
       </div>
 
       <div class="card">
         <h2>Best For</h2>
-        <p>Bags, boxes, small furniture, donation runs, marketplace pickups, and anything Caravan-sized.</p>
+        <p>Bags, boxes, small furniture, donation runs, marketplace pickups, and anything van-sized.</p>
       </div>
     </section>
 
