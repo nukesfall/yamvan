@@ -42,22 +42,6 @@
       width: min(100%, 620px);
     }
 
-    .phone {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      margin: -34px auto 18px;
-      padding: 14px 24px;
-      border: 3px solid var(--black);
-      border-radius: 999px;
-      color: var(--black);
-      text-decoration: none;
-      font-size: clamp(18px, 3.5vw, 32px);
-      font-weight: 900;
-      letter-spacing: -0.04em;
-      background: transparent;
-    }
-
     .headline {
       margin-top: 14px;
       font-size: clamp(28px, 6vw, 64px);
@@ -82,9 +66,7 @@
 
     .actions {
       display: flex;
-      flex-wrap: wrap;
       justify-content: center;
-      gap: 12px;
       margin-bottom: 28px;
     }
 
@@ -101,16 +83,8 @@
       font-weight: 900;
       text-transform: uppercase;
       letter-spacing: 0.08em;
-    }
-
-    .btn.primary {
       background: var(--black);
       color: var(--cream);
-    }
-
-    .btn.secondary {
-      background: transparent;
-      color: var(--black);
     }
 
     .cards {
@@ -166,12 +140,7 @@
         grid-template-columns: 1fr;
       }
 
-      .actions {
-        flex-direction: column;
-      }
-
-      .btn,
-      .phone {
+      .btn {
         width: 100%;
       }
     }
@@ -183,17 +152,14 @@
       <img src="https://nukesfall.github.io/photodump/yamvan.png" style="width:100%; max-width:520px; margin:0 auto; display:block;" />
     </section>
 
-    <a class="phone" href="tel:+19713128020">971-312-8020</a>
-
     <h2 class="headline">Small junk runs in Yamhill County.</h2>
 
     <p class="copy">
-      If it fits in a van — <strong>bags, boxes, small furniture, marketplace items, donation piles, and garage cleanout stuff</strong> — I’ll haul it away. Message me with what you have and photos, or call.
+      If it fits in a van — <strong>bags, boxes, small furniture, marketplace items, donation piles, and garage cleanout stuff</strong> — I’ll haul it away. Message me with what you have and photos.
     </p>
 
     <div class="actions">
-      <a class="btn primary" href="sms:+19713128020">Text Photos</a>
-      <a class="btn secondary" href="tel:+19713128020">Call Now</a>
+      <a class="btn" href="sms:+19713128020">Text Photos</a>
     </div>
 
     <section class="cards">
